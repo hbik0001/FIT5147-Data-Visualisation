@@ -1,0 +1,606 @@
+.borders {
+    fill: none;
+    stroke: lightgrey;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+}
+
+.states {
+    fill: lightblue;
+}
+
+text {
+    stroke: black;
+}
+
+.point {
+    stroke: black;
+    stroke-width: 2px;
+    fill: #FFBE73;
+    fill-opacity: .8;
+}
+
+.base {
+    fill: white;
+    stroke: #5667CC;
+    stroke-width: 1px;
+    opacity: .9;
+}
+
+.q0-9-blue {
+    fill: rgb(247, 251, 255);
+}
+
+.q1-9-blue {
+    fill: rgb(222, 235, 247);
+}
+
+.q2-9-blue {
+    fill: rgb(198, 219, 239);
+}
+
+.q3-9-blue {
+    fill: rgb(158, 202, 225);
+}
+
+.q4-9-blue {
+    fill: rgb(107, 174, 214);
+}
+
+.q5-9-blue {
+    fill: rgb(66, 146, 198);
+}
+
+.q6-9-blue {
+    fill: rgb(33, 113, 181);
+}
+
+.q7-9-blue {
+    fill: rgb(8, 81, 156);
+}
+
+.q8-9-blue {
+    fill: rgb(8, 48, 107);
+}
+
+.q0-9-red {
+    fill: rgb(255, 247, 236);
+}
+
+.q1-9-red {
+    fill: rgb(254, 232, 200);
+}
+
+.q2-9-red {
+    fill: rgb(253, 212, 158);
+}
+
+.q3-9-red {
+    fill: rgb(253, 187, 132);
+}
+
+.q4-9-red {
+    fill: rgb(252, 141, 89);
+}
+
+.q5-9-red {
+    fill: rgb(239, 101, 72);
+}
+
+.q6-9-red {
+    fill: rgb(215, 48, 31);
+}
+
+.q7-9-red {
+    fill: rgb(179, 0, 0);
+}
+
+.q8-9-red {
+    fill: rgb(127, 0, 0);
+}
+
+.q0-9-purple {
+    fill: rgb(252, 251, 253);
+}
+
+.q1-9-purple {
+    fill: rgb(239, 237, 245);
+}
+
+.q2-9-purple {
+    fill: rgb(218, 218, 235);
+}
+
+.q3-9-purple {
+    fill: rgb(188, 189, 220);
+}
+
+.q4-9-purple {
+    fill: rgb(158, 154, 200);
+}
+
+.q5-9-purple {
+    fill: rgb(128, 125, 186);
+}
+
+.q6-9-purple {
+    fill: rgb(106, 81, 163);
+}
+
+.q7-9-purple {
+    fill: rgb(84, 39, 143);
+}
+
+.q8-9-purple {
+    fill: rgb(63, 0, 125);
+}
+
+.q0-9-green {
+    fill: rgb(247, 252, 245);
+}
+
+.q1-9-green {
+    fill: rgb(229, 245, 224);
+}
+
+.q2-9-green {
+    fill: rgb(199, 233, 192);
+}
+
+.q3-9-green {
+    fill: rgb(161, 217, 155);
+}
+
+.q4-9-green {
+    fill: rgb(116, 196, 118);
+}
+
+.q5-9-green {
+    fill: rgb(65, 171, 93);
+}
+
+.q6-9-green {
+    fill: rgb(35, 139, 69);
+}
+
+.q7-9-green {
+    fill: rgb(0, 109, 44);
+}
+
+.q8-9-green {
+    fill: rgb(0, 68, 27);
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    min-width: 10%;
+    max-width: 200%;
+    min-height: 10%;
+    max-height: 200%;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#filter {
+    position: relative;
+    top: 100px;
+    right: 10px;
+    color: black;
+}
+
+#vis-container {
+    position: relative;
+    top: 80px;
+    right: 10px;
+    color: black;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: inherit;
+}
+
+#vis-container option {
+    white-space: nowrap;
+    width: 100% border-bottom: 1px #000 solid;
+}
+
+.slice text {
+    font-size: 16pt;
+    font-family: Arial;
+}
+
+svg:not(:root) {
+    overflow: inherit;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+#svg-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: darkseagreen;
+}
+
+#graph {
+    margin: 0 auto;
+    display: block;
+}
+
+#pie-graph {
+    margin: 0 auto;
+    display: block;
+}
+
+svg#pie-graph {
+    position: inherit;
+    float: right;
+
+}
+
+g#pie-g {
+    position: inherit;
+    float: right;
+}
+
+svg#us-map {
+    position: inherit;
+    float: left;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+    /* Scroll Snap */
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size: 4rem;
+}
+
+
+/* Section Images */
+section#home {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+section#maps {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+section#radial {
+    height: 100%;
+    width: 100%;
+
+}
+
+section#conclusion {
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
+
+#radial-line {
+    height: 100%;
+    width: 100%;
+}
+
+svg#svg-line {
+    position: inherit;
+    float: right;
+}
+
+svg#radial-tree {
+    position: relative;
+    float: left;
+    bottom: 25%;
+}
+
+.node {
+    cursor: pointer;
+}
+
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font: 10px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+
+path.line {
+    stroke: #ccc;
+    stroke-width: 2;
+    fill: none;
+}
+
+path#pie-path {
+    stroke: #ccc;
+    stroke-width: 2;
+
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+#legendContainer {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    overflow: auto;
+    height: 490px;
+    width: 110px;
+}
+
+#legend {
+    width: 90px;
+    height: 200px;
+    position: relative;
+    left: 92%;
+    top: 80px;
+}
+
+.legend {
+    font-size: 12px;
+    font-weight: normal;
+    text-anchor: left;
+}
+
+.legendcheckbox {
+    cursor: pointer;
+}
+
+#showAll {
+    position: absolute;
+    top: 600px;
+    left: 880px;
+}
+
+#clearAll {
+    position: absolute;
+    top: 600px;
+    left: 950px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #999;
+    border: 0;
+    color: #fff;
+}
+
+#inds {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.flex-item2 {
+    width: 67%;
+    height: auto;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*SearchBox*/
+.searchbox {
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 500p;
+    top: 50p;
+    right: 50px;
+    color: black;
+}
+
+/*Conclusion map pie*/
+
+svg#pie-graph-c {
+    position: relative;
+    top: 100;
+}
+
+#map-pie-c {
+    position: relative;
+    float: left;
+    left: 250px;
+    top: -150px;
+    width: 2000px;
+    height: 550px;
+}
+
+svg#us-map-c {
+    position: relative;
+    float: left;
+
+}
+
+/*Conclusion radial -line*/
+div#radial-line-c {
+    position: relative;
+    left: -250px;
+    bottom: 250;
+    width: 1000px;
+    height: 300px;
+    overflow: inherit;
+}
+
+svg#svg-line-c {
+    background-color: antiquewhite;
+}
+
+
+svg#radial-tree-c {
+    height: 550;
+}
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+
+/*home*/
+
+div#home-1 {
+    width: 100%;
+    height: 10%;
+    float: left;
+    position: relative;
+    left: 0;
+    top: 170;
+    background-color: blueviolet;
+
+}
+
+div#home-2 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    left: -350;
+    top: 150;
+}
+
+section p {
+    color: #7a7c7f;
+    font-size: 29px;
+    font-family: "Libre Baskerville", serif;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+    padding-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1 {
+    color: #CEF0D4;
+    font-family: 'Rouge Script', cursive;
+    font-size: 130px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 50px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #082b34;
+}
+
+img {
+    width: 45%;
+    height: 50%;
+    background-color: aqua;
+    position: relative;
+    float: right;
+    top: -350px;
+}

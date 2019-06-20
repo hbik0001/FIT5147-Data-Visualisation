@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>US Visa Case Status</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script src="libs/FileSaver.js"></script>
+    <script src="libs/figue.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/radial-line.js"></script>
+    <script src="js/conclusion.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#maps">Maps</a></li>
+                <li><a href="#radial">Radial</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+
+
+        <section id="home">
+            <div id="home-1">
+                <h1> H1B USA Visa Case Status</h1>
+            </div>
+
+            <div id="home-2">
+                <p>The H-1B is a visa in the United States under the Immigration and Nationality Act, section 101(a)(15)(H) which allows U.S. employers to employ foreign workers in specialty occupations [Wikipedia]. This data has details of employers who employed H1B visa individuals and also details related to their petition.</p>
+                <p>
+                    This Website helps you to understand the different outcome of USA H1-B visa case status based on numerous criteria such as Location based, Employer based, Salary based and other factors like H1B dependent category.
+                    Users will be able to select different conditions and compare the previous case status outcome and predict their chances of getting an H1-B visa.
+                </p>
+            </div>
+            <div id="image">
+                <img src="img/50-stars-america.jpg" alt="close-up-photo-of-people-holding-usa-flaglets">
+            </div>
+        </section>
+
+
+        <section id="maps">
+
+            <div id="map-pie">
+                <select id="filter">
+                    <option value="2013" selected="selected">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                </select>
+            </div>
+
+        </section>
+
+
+
+        <section id="radial">
+            <div id="radial-line">
+                <div id='vis-container'></div>
+                <div id='legend'></div>
+            </div>
+
+
+        </section>
+        <section id="conclusion">
+            <div id="map-radial-c">
+            </div>
+            <div id="bar-c">
+                <svg id="svg-bar-c"></svg>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
+
+<title></title>
