@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    var final_filtered_year = "https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/final_filtered-year.csv";
+    var final_filtered_year = "https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/data/final_filtered-year.csv";
     d3.csv(final_filtered_year, function (d) {
 
         var years = ["2013", "2014", "2015", "2016", "2017"]

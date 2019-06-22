@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
 
     function updateGraph(data) {
-        var Sampling01 ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/Sampling01.csv";
-        var states_hash ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/states-hash.json";
-        var us ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/us.json";
-        var HeatMap ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/HeatMap.csv";
+        var Sampling01 ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/data/Sampling01.csv";
+        var states_hash ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/data/states-hash.json";
+        var us ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/data/us.json";
+        var HeatMap ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/data/HeatMap.csv";
         queue()
             .defer(d3.json, us)
             .defer(d3.json, states_hash)
