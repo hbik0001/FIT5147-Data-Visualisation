@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-
-    //    var url = "https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/sample100.csv?raw=true";
-    //    d3.csv(url, function (d) {
-    //    console.log(d);
-
-    d3.csv("data/final_filtered-year.csv", function (d) {
+    var final_filtered_year = "https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/final_filtered-year.csv";
+    d3.csv(final_filtered_year, function (d) {
 
         var years = ["2013", "2014", "2015", "2016", "2017"]
 
@@ -338,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 if (d.parent.name != undefined || d.name != undefined) {
                     var selectedJobName = d.name;
                     var empJob = prepare.empJobName(_emp, selectedJobName);
-                   // console.log(empJob);
+                    // console.log(empJob);
                     var lineData = [];
                     var currentCaseStatus = {
                         "state": "",
@@ -348,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     for (var k = 2013; k <= 2017; k++) {
                         var empJobYearFilter = prepare.empJobYearFilter(empJob, k);
                         var empCaseStatusGroup = prepare.empCaseStatusGroup(empJobYearFilter);
-                       // console.log(empCaseStatusGroup);
+                        // console.log(empCaseStatusGroup);
                         var value = Object.values(empCaseStatusGroup).length;
                         var keys = Object.keys(empCaseStatusGroup);
 
@@ -422,7 +418,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var xAxis = d3.svg.axis().scale(x)
                 .orient("bottom").ticks(5)
                 .tickFormat(d3.time.format("%Y"));
-                
+
 
             var yAxis = d3.svg.axis().scale(y)
                 .orient("left").ticks(5);

@@ -40,11 +40,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
 
     function updateGraph(data) {
+        var Sampling01 ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/Sampling01.csv";
+        var states_hash ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/states-hash.json";
+        var us ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/us.json";
+        var HeatMap ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/HeatMap.csv";
         queue()
-            .defer(d3.json, "data/us.json")
-            .defer(d3.json, "data/states-hash.json")
-            .defer(d3.csv, "data/Sampling01.csv")
-            .defer(d3.csv, "data/HeatMap.csv")
+            .defer(d3.json, us)
+            .defer(d3.json, states_hash)
+            .defer(d3.csv, Sampling01)
+            .defer(d3.csv, HeatMap)
             .await(function (err, US, states_hash, emp, sal) {
                 _emp = prepare.filterEmp(emp);
                 var empGroup = prepare.empGroup(_emp);
@@ -197,7 +201,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         //--------------------------------------Radial-----------------------------------------------------------------
 
         function updateRadialTree(selComp) {
-            d3.csv("data/final_filtered-year.csv", function (d) {
+            var final_filtered_year = "https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/final_filtered-year.csv";
+            d3.csv(final_filtered - year, function (d) {
 
                 var years = ["2013", "2014", "2015", "2016", "2017"]
 
@@ -514,7 +519,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             var lineData = [];
                             var valuePlaceHolder = {
                                 "value": undefined, // count
-                                "rate": undefined,  // case status
+                                "rate": undefined, // case status
                             };
                             var currentCaseStatus = {
                                 "categorie": undefined,
@@ -526,16 +531,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 console.log(empCaseStatusGroup);
                                 var value = Object.values(empCaseStatusGroup).length;
                                 var keys = Object.keys(empCaseStatusGroup);
-                                
+
                                 currentCaseStatus = {};
-                                 currentCaseStatus.values = [];
+                                currentCaseStatus.values = [];
                                 currentCaseStatus.categorie = k;
 
                                 for (var i = 1; i <= keys.length; i++) {
                                     for (var j = 1; j <= 1; j++) {
                                         var counts = empCaseStatusGroup[keys[i - 1]].length
                                         valuePlaceHolder = {};
-                                        
+
                                         valuePlaceHolder.value = counts;
                                         valuePlaceHolder.rate = keys[i - 1];
                                         console.log(currentCaseStatus);
@@ -548,7 +553,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                             console.log("data here");
                             console.log(lineData);
-                            
+
                             updateBarChart(lineData);
                         }
 
@@ -601,10 +606,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                             .append("g")
                             .attr("id", "g-bar-c")
                             .attr("transform", "translate(" + margins.left + "," + margins.top + ")");
-                        
+
                         updateStackBarCharts(barData);
 
-                        function updateStackBarCharts(data){
+                        function updateStackBarCharts(data) {
 
                             var categoriesNames = data.map(function (d) {
                                 return d.categorie;
@@ -688,37 +693,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 });
 
                             //Legend
-                                    var legend = svg.selectAll(".legend")
-                                        .data(data[0].values.map(function (d) {
-                                            return d.rate;
-                                        }).reverse())
-                                        .enter().append("g")
-                                        .attr("class", "legend")
-                                        .attr("transform", function (d, i) {
-                                            return "translate(0," + i * 20 + ")";
-                                        })
-                                        .style("opacity", "0");
-                            
-                                    legend.append("rect")
-                                        .attr("x", width - 18)
-                                        .attr("width", 18)
-                                        .attr("height", 18)
-                                        .style("fill", function (d) {
-                                            return color(d);
-                                        });
-                            
-                                    legend.append("text")
-                                        .attr("x", width - 24)
-                                        .attr("y", 9)
-                                        .attr("dy", ".35em")
-                                        .style("text-anchor", "end")
-                                        .text(function (d) {
-                                            return d;
-                                        });
-                            
-                                    legend.transition().duration(500).delay(function (d, i) {
-                                        return 1300 + 100 * i;
-                                    }).style("opacity", "1");
+                            var legend = svg.selectAll(".legend")
+                                .data(data[0].values.map(function (d) {
+                                    return d.rate;
+                                }).reverse())
+                                .enter().append("g")
+                                .attr("class", "legend")
+                                .attr("transform", function (d, i) {
+                                    return "translate(0," + i * 20 + ")";
+                                })
+                                .style("opacity", "0");
+
+                            legend.append("rect")
+                                .attr("x", width - 18)
+                                .attr("width", 18)
+                                .attr("height", 18)
+                                .style("fill", function (d) {
+                                    return color(d);
+                                });
+
+                            legend.append("text")
+                                .attr("x", width - 24)
+                                .attr("y", 9)
+                                .attr("dy", ".35em")
+                                .style("text-anchor", "end")
+                                .text(function (d) {
+                                    return d;
+                                });
+
+                            legend.transition().duration(500).delay(function (d, i) {
+                                return 1300 + 100 * i;
+                            }).style("opacity", "1");
 
                         };
 
@@ -727,8 +732,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
                     //----------------------------Bar End--------------------------------------------------
-                
-                
+
+
                 }
 
 

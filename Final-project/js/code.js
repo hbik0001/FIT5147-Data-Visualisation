@@ -43,11 +43,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
 
     function updateGraph(data) {
+        var Sampling01 ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/Sampling01.csv";
+        var states_hash ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/states-hash.json";
+        var us ="https://raw.githubusercontent.com/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/us.json";
+        var HeatMap ="https://media.githubusercontent.com/media/hbik0001/FIT5147-Data-Visualisation/master/Final-project/data/HeatMap.csv";
         queue()
-            .defer(d3.json, "data/us.json")
-            .defer(d3.json, "data/states-hash.json")
-            .defer(d3.csv, "data/Sampling01.csv")
-            .defer(d3.csv, "data/HeatMap.csv")
+            .defer(d3.json, us)
+            .defer(d3.json, states_hash)
+            .defer(d3.csv, Sampling01)
+            .defer(d3.csv, HeatMap)
             .await(function (err, US, states_hash, emp, sal) {
                 _emp = prepare.filterEmp(emp);
                 var empGroup = prepare.empGroup(_emp);
