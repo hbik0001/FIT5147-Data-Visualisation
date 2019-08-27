@@ -1,65 +1,20 @@
 [
     {
-        id: '1',
-        name: 'Bourke Street Mall',
-        description: 'Bourke Street is one of the main streets of Melbournes Central Business District and a core feature of the Hoddle Grid',
-        location: {
-            lat: -37.8137894,
-            long: 144.9624562
+        "id": "1",
+        "name": "Bourke Street Mall",
+        "description": "Bourke Street is one of the main streets of Melbournes Central Business District and a core feature of the Hoddle Grid",
+        "location": {
+            "lat": -37.8137894,
+            "long": 144.9624562
         }
   },
     {
-        id: '2',
-        name: 'Degrave Street',
-        description: 'Just across Flinders Lane from Centre Place, bustling Degraves Street was one of the first Melbourne laneways to make such a ruckus.',
-        location: {
-            lat: -37.8173376,
-            long: 144.9636034
-        }
-  },
-    {
-        id: '3',
-        name: 'Federation Square',
-        description: 'Home to major cultural attractions, world-class events, tourism, exceptional array of restaurants, bars, specialty stores and has become the citys meeting place.',
-        location: {
-            lat: -37.817711,
-            long: 144.9679939
-        }
-  },
-    {
-        id: '4',
-        name: 'Melbourne Central',
-        description: 'Melbourne Central is a large shopping centre, office, and public transport hub in the city of Melbourne, Victoria, Australia.',
-        location: {
-            lat: -37.8102318,
-            long: 144.9605765
-        }
-  },
-    {
-        id: '5',
-        name: 'State Library Victoria',
-        description: 'Victorian landmark, opened in 1856, consisting of 23 classical buildings, with a grand reading room.',
-        location: {
-            lat: -37.8098044,
-            long: 144.963001
-        }
-  },
-    {
-        id: '6',
-        name: 'Chinatown',
-        description: 'Chinatown is a distinctive and well known area of Melbourne which dates back to the gold rush days of the 1850s. Chinatown Melbourne is the longest continuous Chinese settlement in the western world.',
-        location: {
-            lat: -37.8118228,
-            long: 144.9654459
-        }
-  },
-    {
-        id: '7',
-        name: 'Immigration Museum',
-        description: 'Multimedia exhibits documenting the history of immigration in Australia, with a cafe & gift shop.',
-        location: {
-            lat: -37.8192442,
-            long: 144.958266
+        "id": "2",
+        "name": "Degrave Street",
+        "description": "Just across Flinders Lane from Centre Place, bustling Degraves Street was one of the first Melbourne laneways to make such a ruckus.",
+        "location": {
+            "lat": -37.8173376,
+            "long": 144.9636034
         }
   }
 ],
