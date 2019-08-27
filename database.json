@@ -1,4 +1,4 @@
-[
+"landmark":[
     {
         id: '1',
         name: 'Bourke Street Mall',
@@ -63,7 +63,7 @@
         }
   }
 ],
-[
+"location":[
     {
         "sensor_id": 21,
         "date": "2019/08/21",
@@ -428,5 +428,4 @@
         "longitude": 144.94717511,
         "sensor_description": "Webb Bridge",
         "x": 267
-    }
-]
+    }]
