@@ -1,6 +1,6 @@
 [
     {
-        id: 'a0ddc633-bbbf-4a45-ab61-97d906d7e861',
+        id: '1',
         name: 'Bourke Street Mall',
         description: 'Bourke Street is one of the main streets of Melbournes Central Business District and a core feature of the Hoddle Grid',
         location: {
@@ -9,7 +9,7 @@
         }
   },
     {
-        id: '62c9555c-04bd-463d-9644-a983849eaad1',
+        id: '2',
         name: 'Degrave Street',
         description: 'Just across Flinders Lane from Centre Place, bustling Degraves Street was one of the first Melbourne laneways to make such a ruckus.',
         location: {
@@ -18,7 +18,7 @@
         }
   },
     {
-        id: 'c6750762-a37f-4880-bc03-96f9730f445f',
+        id: '3',
         name: 'Federation Square',
         description: 'Home to major cultural attractions, world-class events, tourism, exceptional array of restaurants, bars, specialty stores and has become the citys meeting place.',
         location: {
@@ -27,7 +27,7 @@
         }
   },
     {
-        id: '52d8064b-d657-472e-89b7-d9cf7e1ab3ba',
+        id: '4',
         name: 'Melbourne Central',
         description: 'Melbourne Central is a large shopping centre, office, and public transport hub in the city of Melbourne, Victoria, Australia.',
         location: {
@@ -36,7 +36,7 @@
         }
   },
     {
-        id: 'e14231af-21e4-4463-ac67-b6eef30a4189',
+        id: '5',
         name: 'State Library Victoria',
         description: 'Victorian landmark, opened in 1856, consisting of 23 classical buildings, with a grand reading room.',
         location: {
@@ -45,7 +45,7 @@
         }
   },
     {
-        id: '58b6773e-7964-4e92-bc00-8c3600887a86',
+        id: '6',
         name: 'Chinatown',
         description: 'Chinatown is a distinctive and well known area of Melbourne which dates back to the gold rush days of the 1850s. Chinatown Melbourne is the longest continuous Chinese settlement in the western world.',
         location: {
@@ -54,7 +54,7 @@
         }
   },
     {
-        id: '0817093f-837b-4f25-bf01-465d05d40244',
+        id: '7',
         name: 'Immigration Museum',
         description: 'Multimedia exhibits documenting the history of immigration in Australia, with a cafe & gift shop.',
         location: {
