@@ -1,0 +1,430 @@
+landmarks = [
+        {
+            id: 'a0ddc633-bbbf-4a45-ab61-97d906d7e861',
+            name: 'Bourke Street Mall',
+            description: 'Bourke Street is one of the main streets of Melbournes Central Business District and a core feature of the Hoddle Grid',
+            location: {
+                lat: -37.8137894,
+                long: 144.9624562
+            }
+  },
+        {
+            id: '62c9555c-04bd-463d-9644-a983849eaad1',
+            name: 'Degrave Street',
+            description: 'Just across Flinders Lane from Centre Place, bustling Degraves Street was one of the first Melbourne laneways to make such a ruckus.',
+            location: {
+                lat: -37.8173376,
+                long: 144.9636034
+            }
+  },
+        {
+            id: 'c6750762-a37f-4880-bc03-96f9730f445f',
+            name: 'Federation Square',
+            description: 'Home to major cultural attractions, world-class events, tourism, exceptional array of restaurants, bars, specialty stores and has become the citys meeting place.',
+            location: {
+                lat: -37.817711,
+                long: 144.9679939
+            }
+  },
+        {
+            id: '52d8064b-d657-472e-89b7-d9cf7e1ab3ba',
+            name: 'Melbourne Central',
+            description: 'Melbourne Central is a large shopping centre, office, and public transport hub in the city of Melbourne, Victoria, Australia.',
+            location: {
+                lat: -37.8102318,
+                long: 144.9605765
+            }
+  },
+        {
+            id: 'e14231af-21e4-4463-ac67-b6eef30a4189',
+            name: 'State Library Victoria',
+            description: 'Victorian landmark, opened in 1856, consisting of 23 classical buildings, with a grand reading room.',
+            location: {
+                lat: -37.8098044,
+                long: 144.963001
+            }
+  },
+        {
+            id: '58b6773e-7964-4e92-bc00-8c3600887a86',
+            name: 'Chinatown',
+            description: 'Chinatown is a distinctive and well known area of Melbourne which dates back to the gold rush days of the 1850s. Chinatown Melbourne is the longest continuous Chinese settlement in the western world.',
+            location: {
+                lat: -37.8118228,
+                long: 144.9654459
+            }
+  },
+        {
+            id: '0817093f-837b-4f25-bf01-465d05d40244',
+            name: 'Immigration Museum',
+            description: 'Multimedia exhibits documenting the history of immigration in Australia, with a cafe & gift shop.',
+            location: {
+                lat: -37.8192442,
+                lonf: 144.958266
+            }
+  }
+],
+    locations = [{
+        "sensor_id": 21,
+        "date": "2019/08/21",
+        "latitude": -37.81244703,
+        "longitude": 144.96778757,
+        "sensor_description": "Bourke St-Russell St (West)",
+        "x": 1023
+    }, {
+        "sensor_id": 58,
+        "date": "2019/08/21",
+        "latitude": -37.81686074,
+        "longitude": 144.95358075,
+        "sensor_description": "Bourke St - Spencer St (North)",
+        "x": 228
+    }, {
+        "sensor_id": 57,
+        "date": "2019/08/21",
+        "latitude": -37.8176735,
+        "longitude": 144.95025595,
+        "sensor_description": "Bourke St Bridge",
+        "x": 1551
+    }, {
+        "sensor_id": 1,
+        "date": "2019/08/21",
+        "latitude": -37.8134944,
+        "longitude": 144.96515324,
+        "sensor_description": "Bourke Street Mall (North)",
+        "x": 2832
+    }, {
+        "sensor_id": 2,
+        "date": "2019/08/21",
+        "latitude": -37.81380667,
+        "longitude": 144.96516719,
+        "sensor_description": "Bourke Street Mall (South)",
+        "x": 2032
+    }, {
+        "sensor_id": 59,
+        "date": "2019/08/21",
+        "latitude": -37.80825648,
+        "longitude": 144.96304859,
+        "sensor_description": "Building 80 RMIT",
+        "x": 468
+    }, {
+        "sensor_id": 20,
+        "date": "2019/08/21",
+        "latitude": -37.81172913,
+        "longitude": 144.9682466,
+        "sensor_description": "Chinatown-Lt Bourke St (South)",
+        "x": 669
+    }, {
+        "sensor_id": 19,
+        "date": "2019/08/21",
+        "latitude": -37.81237202,
+        "longitude": 144.96550671,
+        "sensor_description": "Chinatown-Swanston St (North)",
+        "x": 723
+    }, {
+        "sensor_id": 18,
+        "date": "2019/08/21",
+        "latitude": -37.81344861,
+        "longitude": 144.97305354,
+        "sensor_description": "Collins Place (North)",
+        "x": 672
+    }, {
+        "sensor_id": 17,
+        "date": "2019/08/21",
+        "latitude": -37.81362542,
+        "longitude": 144.97323592,
+        "sensor_description": "Collins Place (South)",
+        "x": 792
+    }, {
+        "sensor_id": 53,
+        "date": "2019/08/21",
+        "latitude": -37.8156419,
+        "longitude": 144.965499,
+        "sensor_description": "Collins Street (North)",
+        "x": 1339
+    }, {
+        "sensor_id": 52,
+        "date": "2019/08/21",
+        "latitude": -37.81252157,
+        "longitude": 144.9619401,
+        "sensor_description": "Elizabeth St-Lonsdale St (South)",
+        "x": 748
+    }, {
+        "sensor_id": 50,
+        "date": "2019/08/21",
+        "latitude": -37.79808191,
+        "longitude": 144.96721014,
+        "sensor_description": "Faraday St-Lygon St (West)",
+        "x": 302
+    }, {
+        "sensor_id": 60,
+        "date": "2019/08/21",
+        "latitude": -37.81668188,
+        "longitude": 144.9668954,
+        "sensor_description": "Flinders La - Swanston St (West) Temporary",
+        "x": 3293
+    }, {
+        "sensor_id": 22,
+        "date": "2019/08/21",
+        "latitude": -37.81786445,
+        "longitude": 144.96506823,
+        "sensor_description": "Flinders St-Elizabeth St (East)",
+        "x": 3283
+    }, {
+        "sensor_id": 34,
+        "date": "2019/08/21",
+        "latitude": -37.81537985,
+        "longitude": 144.9741505,
+        "sensor_description": "Flinders St-Spark La",
+        "x": 196
+    }, {
+        "sensor_id": 33,
+        "date": "2019/08/21",
+        "latitude": -37.81483252,
+        "longitude": 144.97454056,
+        "sensor_description": "Flinders St-Spring St (West)",
+        "x": 269
+    }, {
+        "sensor_id": 6,
+        "date": "2019/08/21",
+        "latitude": -37.81911704,
+        "longitude": 144.96558256,
+        "sensor_description": "Flinders Street Station Underpass",
+        "x": 2372
+    }, {
+        "sensor_id": 42,
+        "date": "2019/08/21",
+        "latitude": -37.80008565,
+        "longitude": 144.96386412,
+        "sensor_description": "Grattan St-Swanston St (West)",
+        "x": 961
+    }, {
+        "sensor_id": 54,
+        "date": "2019/08/21",
+        "latitude": -37.804024,
+        "longitude": 144.963084,
+        "sensor_description": "Lincoln-Swanston (West)",
+        "x": 175
+    }, {
+        "sensor_id": 45,
+        "date": "2019/08/21",
+        "latitude": -37.81414074,
+        "longitude": 144.9660938,
+        "sensor_description": "Little Collins St-Swanston St (East)",
+        "x": 1836
+    }, {
+        "sensor_id": 40,
+        "date": "2019/08/21",
+        "latitude": -37.80999341,
+        "longitude": 144.97227588,
+        "sensor_description": "Lonsdale St-Spring St (West)",
+        "x": 651
+    }, {
+        "sensor_id": 56,
+        "date": "2019/08/21",
+        "latitude": -37.81234775,
+        "longitude": 144.96153311,
+        "sensor_description": "Lonsdale St - Elizabeth St (North)",
+        "x": 205
+    }, {
+        "sensor_id": 30,
+        "date": "2019/08/21",
+        "latitude": -37.81121849,
+        "longitude": 144.96656807,
+        "sensor_description": "Lonsdale St (South)",
+        "x": 758
+    }, {
+        "sensor_id": 37,
+        "date": "2019/08/21",
+        "latitude": -37.80310271,
+        "longitude": 144.96671452,
+        "sensor_description": "Lygon St (East)",
+        "x": 207
+    }, {
+        "sensor_id": 31,
+        "date": "2019/08/21",
+        "latitude": -37.8016968,
+        "longitude": 144.96658911,
+        "sensor_description": "Lygon St (West)",
+        "x": 317
+    }, {
+        "sensor_id": 3,
+        "date": "2019/08/21",
+        "latitude": -37.81101523,
+        "longitude": 144.96429485,
+        "sensor_description": "Melbourne Central",
+        "x": 2233
+    }, {
+        "sensor_id": 47,
+        "date": "2019/08/21",
+        "latitude": -37.81160331,
+        "longitude": 144.96220077,
+        "sensor_description": "Melbourne Central-Elizabeth St (East)Melbourne Central-Elizabeth St (East)",
+        "x": 2001
+    }, {
+        "sensor_id": 43,
+        "date": "2019/08/21",
+        "latitude": -37.79844525,
+        "longitude": 144.96411782,
+        "sensor_description": "Monash Rd-Swanston St (West)",
+        "x": 299
+    }, {
+        "sensor_id": 12,
+        "date": "2019/08/21",
+        "latitude": -37.81457987,
+        "longitude": 144.94292398,
+        "sensor_description": "New Quay",
+        "x": 259
+    }, {
+        "sensor_id": 46,
+        "date": "2019/08/21",
+        "latitude": -37.80240719,
+        "longitude": 144.96156731,
+        "sensor_description": "Pelham St (South)",
+        "x": 216
+    }, {
+        "sensor_id": 5,
+        "date": "2019/08/21",
+        "latitude": -37.81874249,
+        "longitude": 144.96787656,
+        "sensor_description": "Princes Bridge",
+        "x": 2021
+    }, {
+        "sensor_id": 36,
+        "date": "2019/08/21",
+        "latitude": -37.81652527,
+        "longitude": 144.96121063,
+        "sensor_description": "Queen St (West)",
+        "x": 553
+    }, {
+        "sensor_id": 26,
+        "date": "2019/08/21",
+        "latitude": -37.80869542,
+        "longitude": 144.96049404,
+        "sensor_description": "QV Market-Elizabeth St (West)",
+        "x": 1648
+    }, {
+        "sensor_id": 27,
+        "date": "2019/08/21",
+        "latitude": -37.80606888,
+        "longitude": 144.95644693,
+        "sensor_description": "QV Market-Peel St",
+        "x": 57
+    }, {
+        "sensor_id": 51,
+        "date": "2019/08/21",
+        "latitude": -37.80841814,
+        "longitude": 144.95906317,
+        "sensor_description": "QVM-Franklin St (North)",
+        "x": 218
+    }, {
+        "sensor_id": 48,
+        "date": "2019/08/21",
+        "latitude": -37.80631581,
+        "longitude": 144.95866698,
+        "sensor_description": "QVM-Queen St (East)",
+        "x": 412
+    }, {
+        "sensor_id": 49,
+        "date": "2019/08/21",
+        "latitude": -37.80730067,
+        "longitude": 144.95956055,
+        "sensor_description": "QVM-Therry St (South)",
+        "x": 180
+    }, {
+        "sensor_id": 61,
+        "date": "2019/08/21",
+        "latitude": -37.80767455,
+        "longitude": 144.96309115,
+        "sensor_description": "RMIT Building 14",
+        "x": 1510
+    }, {
+        "sensor_id": 14,
+        "date": "2019/08/21",
+        "latitude": -37.82011242,
+        "longitude": 144.96291898,
+        "sensor_description": "Sandridge Bridge",
+        "x": 823
+    }, {
+        "sensor_id": 35,
+        "date": "2019/08/21",
+        "latitude": -37.82017828,
+        "longitude": 144.96508877,
+        "sensor_description": "Southbank",
+        "x": 1199
+    }, {
+        "sensor_id": 9,
+        "date": "2019/08/21",
+        "latitude": -37.81982992,
+        "longitude": 144.95102556,
+        "sensor_description": "Southern Cross Station",
+        "x": 1793
+    }, {
+        "sensor_id": 24,
+        "date": "2019/08/21",
+        "latitude": -37.81887962,
+        "longitude": 144.95449198,
+        "sensor_description": "Spencer St-Collins St (North)",
+        "x": 2896
+    }, {
+        "sensor_id": 23,
+        "date": "2019/08/21",
+        "latitude": -37.81909256,
+        "longitude": 144.95452749,
+        "sensor_description": "Spencer St-Collins St (South)",
+        "x": 650
+    }, {
+        "sensor_id": 29,
+        "date": "2019/08/21",
+        "latitude": -37.81965808,
+        "longitude": 144.96863453,
+        "sensor_description": "St Kilda Rd-Alexandra Gardens",
+        "x": 514
+    }, {
+        "sensor_id": 15,
+        "date": "2019/08/21",
+        "latitude": -37.81064378,
+        "longitude": 144.96447132,
+        "sensor_description": "State Library",
+        "x": 1938
+    }, {
+        "sensor_id": 28,
+        "date": "2019/08/21",
+        "latitude": -37.82129924,
+        "longitude": 144.96879309,
+        "sensor_description": "The Arts Centre",
+        "x": 1705
+    }, {
+        "sensor_id": 44,
+        "date": "2019/08/21",
+        "latitude": -37.79690473,
+        "longitude": 144.96440378,
+        "sensor_description": "Tin Alley-Swanston St (West)",
+        "x": 261
+    }, {
+        "sensor_id": 4,
+        "date": "2019/08/21",
+        "latitude": -37.81487988,
+        "longitude": 144.9660878,
+        "sensor_description": "Town Hall (West)",
+        "x": 2880
+    }, {
+        "sensor_id": 10,
+        "date": "2019/08/21",
+        "latitude": -37.81876473,
+        "longitude": 144.94710545,
+        "sensor_description": "Victoria Point",
+        "x": 428
+    }, {
+        "sensor_id": 11,
+        "date": "2019/08/21",
+        "latitude": -37.81564989,
+        "longitude": 144.93970695,
+        "sensor_description": "Waterfront City",
+        "x": 118
+    }, {
+        "sensor_id": 8,
+        "date": "2019/08/21",
+        "latitude": -37.82293543,
+        "longitude": 144.94717511,
+        "sensor_description": "Webb Bridge",
+        "x": 267
+    }]
